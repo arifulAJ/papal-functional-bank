@@ -46,6 +46,7 @@ if(depositAs>0){
     amountShow('deposit-balance',depositAs);
     totalFinalBalance(depositAs,true);
 }
+else{window.alert('sorry enter valid and positive  number')}
 })
 // withdraw
 document.getElementById('withdraw-button').addEventListener('click',function(){
@@ -57,7 +58,7 @@ if(withdrawInput>0 && withdrawInput<withdrawCurrentBalance){
     totalFinalBalance(withdrawInput,false);
 }
 else if(withdrawInput>withdrawCurrentBalance){
-    window.alert('you don not have  balance');
+    window.alert("you don't have sufficient balance please try agin later");
 
 }
 
