@@ -61,5 +61,8 @@ else if(withdrawInput>withdrawCurrentBalance){
     window.alert("you don't have sufficient balance please try agin later");
 
 }
+else{
+    window.alert('sorry enter positive or valid number')
+}
 
 })
